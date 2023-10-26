@@ -234,6 +234,18 @@
     // ButtonEがクリックされた時の処理
     function btnEClick(e){
         active=false;
+
+        var canvas=$("#mycanvas")[0];
+        var ctx=canvas.getContext("2d");
+        var img=new Image();
+        img.src="bakuhatsu.png";
+        img.onload=function(){
+            ctx.drawImage(img,0,0,200,200);
+        };
+
+        var audio=new Audio();
+        audio.src="bakuhatsu.mp3";
+        audio.play();
         
     }
     
