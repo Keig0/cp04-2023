@@ -42,6 +42,10 @@
         $('#btnD').click(function(e) {
             btnDClick(e);
         });
+
+        $('#btnE').click(function(e) {
+            btnEClick(e);
+        });
         init();
     });
     
@@ -166,6 +170,7 @@
         $('#btnB').prop('disabled', false);
         $('#btnC').prop('disabled', false);
         $('#btnD').prop('disabled', false);
+        $('#btnE').prop('disabled', false);
         
     }
 
@@ -225,6 +230,12 @@
         };
         
     }
+
+    // ButtonEがクリックされた時の処理
+    function btnEClick(e){
+        active=false;
+        
+    }
     
  
     // 繰り返し実行する処理
@@ -257,7 +268,8 @@
     <button id="btnA">Start</button>  
     <button id="btnB">Stop</button>  
     <button id="btnC">Set</button> 
-    <button id="btnD">3minutes</button>   
+    <button id="btnD">3minutes</button> 
+    <button id="btnE">Self Boom!!</button>   
     <input type="number" id="minute" value=0 >
     <input type="number" id="second" value=15 >
 </body>
